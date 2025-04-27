@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>卡路里计算器</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Calorie-Calculator-Icon">
+            <circle id="Background" fill="#1890FF" cx="64" cy="64" r="64"></circle>
+            <g id="Camera" transform="translate(24.000000, 32.000000)" fill="#FFFFFF">
+                <path d="M40,0 L48,8 L72,8 C74.209139,8 76,9.790861 76,12 L76,60 C76,62.209139 74.209139,64 72,64 L8,64 C5.790861,64 4,62.209139 4,60 L4,12 C4,9.790861 5.790861,8 8,8 L32,8 L40,0 Z" id="Camera-Body"></path>
+                <circle id="Lens" fill="#1890FF" cx="40" cy="36" r="16"></circle>
+                <circle id="Flash" fill="#1890FF" cx="64" cy="20" r="4"></circle>
+            </g>
+            <g id="Food" transform="translate(40.000000, 40.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <circle id="Plate" fill-opacity="0.3" cx="24" cy="24" r="24"></circle>
+            </g>
+        </g>
+    </g>
+</svg> 

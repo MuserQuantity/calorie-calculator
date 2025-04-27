@@ -1,0 +1,68 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# FastAPI + Node.js项目规则
+
+## FastAPI (Python)部分
+
+### 项目结构
+- 使用模块化结构，将路由、模型、服务和依赖项分开
+- 主应用位于`main.py`或`app.py`中
+- 路由定义在`routes/`或`api/`目录中
+- 数据模型在`models/`目录中使用Pydantic
+- 数据库连接和操作在`database/`或`db/`中
+
+### 代码规范
+- 使用类型注解
+- 对所有API端点进行文档化
+- 使用依赖注入处理共享逻辑
+- 使用异步函数进行I/O操作
+- 遵循PEP 8风格指南
+
+## Node.js部分
+
+### 项目结构
+- 使用`src/`目录存放源代码
+- 使用`controllers/`存放业务逻辑
+- 使用`routes/`定义API路由
+- 使用`models/`定义数据模型
+- 使用`middleware/`存放中间件
+
+### 代码规范
+- 推荐使用TypeScript
+- 使用ESM模块系统
+- 使用async/await处理异步操作
+- 使用环境变量进行配置
+- 使用统一的错误处理
+
+## OpenAI接口
+- 使用OpenAI官方SDK集成图像识别功能
+- 遵循OpenAI API使用最佳实践
+- 使用环境变量存储API密钥，避免硬编码
+- 实现适当的错误处理和重试机制
+- 考虑实现请求队列以管理API速率限制
+
+## 全栈集成
+- FastAPI后端与Node.js前端通过RESTful API通信
+- 使用统一的API响应格式
+- 共享数据验证逻辑
+- 考虑CORS设置
+- 使用Docker进行开发和部署
+
+## 数据库
+- 使用ORM：SQLAlchemy (Python) 或 Prisma/TypeORM (Node.js)
+- 使用迁移工具管理数据库变更
+- 使用连接池优化性能
+
+## 测试
+- 编写单元测试和集成测试
+- 使用pytest (Python) 或 Jest (Node.js)
+- 使用测试数据库进行集成测试
+
+## 安全最佳实践
+- 使用HTTPS
+- 实施身份验证和授权
+- 防范CSRF、XSS和SQL注入
+- 安全处理用户数据
